@@ -4,3 +4,4 @@ supabase
 python-multipart
 pydantic
 httpx
+python-dotenv
