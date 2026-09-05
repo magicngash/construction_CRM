@@ -4,8 +4,8 @@ import pandas as pd
 
 st.set_page_config(page_title="Construction CRM", page_icon="???", layout="wide")
 
-# Replace this string with your actual Render service URL!
-BACKEND_URL = "https://construction-crm-backend-xxxx.onrender.com"
+# LIVE RENDER BACKEND URL
+BACKEND_URL = "https://construction-crm-zdqc.onrender.com"
 
 st.title("??? Construction CRM Dashboard")
 
@@ -67,4 +67,4 @@ try:
     else:
         st.error(f"Failed to fetch data (Status Code: {response.status_code})")
 except Exception as e:
-    st.error(f"Unable to connect to backend service: {e}")
+    st.error(f"Backend request failed: {e}")
