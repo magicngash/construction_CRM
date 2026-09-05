@@ -27,6 +27,10 @@ class ProjectCreate(BaseModel):
 def read_root():
     return {"status": "online", "message": "Construction CRM API"}
 
+@app.get("/health")
+def health_check():
+    return {"status": "healthy"}
+
 @app.get("/projects")
 def get_projects():
     try:

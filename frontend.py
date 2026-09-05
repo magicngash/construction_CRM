@@ -11,7 +11,10 @@ import streamlit as st
 # CONFIG
 # =============================================================================
 
-API_BASE = os.environ.get("SITEMGR_API_BASE", "http://localhost:8000")
+API_BASE = os.environ.get(
+    "SITEMGR_API_BASE",
+    "https://construction-crm-zdqc.onrender.com",
+).rstrip("/")
 
 st.set_page_config(
     page_title="Contractor Site Manager",
