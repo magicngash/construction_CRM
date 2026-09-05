@@ -5,7 +5,7 @@ import pandas as pd
 st.set_page_config(page_title="Construction CRM", page_icon="???", layout="wide")
 
 # Replace this string with your actual Render service URL!
-BACKEND_URL = "https://your-actual-render-service.onrender.com"
+BACKEND_URL = "https://construction-crm-backend-xxxx.onrender.com"
 
 st.title("??? Construction CRM Dashboard")
 
